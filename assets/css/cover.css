@@ -52,6 +52,7 @@ body:before {
   background-image: url('/assets/img/pattern.png');
   background-repeat: repeat;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -188,4 +189,19 @@ body:before {
   .cover-container {
     width: 42rem;
   }
+}
+
+
+/*
+ * Contact Form
+ */
+
+.form-contact {
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-contact .form-control {
+  min-height: 50px;
 }
