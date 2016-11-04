@@ -13,18 +13,14 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #fff;
+  color: #333;
   font-size: .875rem;
+  font-weight: 600;
   border: 0;
-  background-color: #f36;
+  background-color: #fff;
   letter-spacing: 1px;
   text-shadow: none; /* Prevent inheritance from `body` */
   text-transform: uppercase;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background: #f42156;
 }
 
 
