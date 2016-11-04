@@ -42,27 +42,31 @@
             <input type="hidden" name="_subject" />
             <input type="text" name="_gotcha" style="display:none" />
             <div class="form-group">
-              <label for="name">What's your first name?</label>
-              <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter first name" autocomplete="given-name" autofocus>
+              <input type="text" class="form-control form-control-lg" id="name" autocomplete="given-name" autofocus required>
+              <label for="name">What's your name?</label>
+              <div class="line"></div>
             </div>
             <div class="form-group">
+              <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="email-help" required>
               <label for="email">What's your email address?</label>
-              <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="email-help" placeholder="Enter email address">
+              <div class="line"></div>
               <small id="email-help" class="form-text text-muted">We'll use this to get back to you. No spam or unexpected newsletters here.</small>
             </div>
             <div class="form-group">
-              <label for="subject">What's your message about?</label>
-              <select class="form-control form-control-lg custom-select" id="subject" name="subject">
+              <select class="form-control form-control-lg custom-select" id="subject" name="subject" required>
                 <option>I'd like to work with you</option>
                 <option>I have some feedback</option>
                 <option>I'm looking for some advice</option>
                 <option>I'd just like to chat</option>
               </select>
+              <label for="subject">What's your message about?</label>
+              <div class="line"></div>
               <small id="subject-help" class="form-text text-muted">Think of this as like the subject field in an email. But already filled in for you.</small>
             </div>
             <div class="form-group">
+              <textarea class="form-control form-control-lg" id="message" name="message" rows="3" required></textarea>
               <label for="message">What's your message?</label>
-              <textarea class="form-control form-control-lg" id="message" name="message" rows="3" placeholder="Enter message"></textarea>
+              <div class="line"></div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
           </form>
