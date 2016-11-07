@@ -42,31 +42,30 @@
             <input type="hidden" name="_subject" />
             <input type="text" name="_gotcha" style="display:none" />
             <div class="form-group">
+              <label class="form-control-label" for="name">Name</label>
               <input type="text" class="form-control form-control-lg" id="name" autocomplete="given-name" autofocus required>
-              <label for="name">What's your name?</label>
-              <div class="line"></div>
             </div>
             <div class="form-group">
+              <label class="form-control-label" for="email">Email Address</label>
               <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="email-help" required>
-              <label for="email">What's your email address?</label>
-              <div class="line"></div>
-              <small id="email-help" class="form-text text-muted">We'll use this to get back to you. No spam or unexpected newsletters here.</small>
+              <!-- <small id="email-help" class="form-text text-muted">We'll use this to get back to you. No spam or unexpected newsletters here.</small> -->
             </div>
             <div class="form-group">
+              <label class="form-control-label" for="subject">Subject</label>
               <select class="form-control form-control-lg custom-select" id="subject" name="subject" required>
-                <option>I'd like to work with you</option>
+                <!-- <option>I'd like to work with you</option>
                 <option>I have some feedback</option>
                 <option>I'm looking for some advice</option>
-                <option>I'd just like to chat</option>
+                <option>I'd just like to chat</option> -->
+                <option>General Inquery</option>
+                <option>Bookings</option>
+                <option>Upcoming Shows</option>
               </select>
-              <label for="subject">What's your message about?</label>
-              <div class="line"></div>
-              <small id="subject-help" class="form-text text-muted">Think of this as like the subject field in an email. But already filled in for you.</small>
+              <!-- <small id="subject-help" class="form-text text-muted">Think of this as like the subject field in an email. But already filled in for you.</small> -->
             </div>
             <div class="form-group">
+              <label class="form-control-label" for="message">Message</label>
               <textarea class="form-control form-control-lg" id="message" name="message" rows="3" required></textarea>
-              <label for="message">What's your message?</label>
-              <div class="line"></div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
           </form>
